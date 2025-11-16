@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Loop</title>
+</head>
+<body>
+  
+
+    <h1>toss app</h1>
+    <button onclick="toss('chand')">chand </button>
+    <button onclick="toss('masjid')">masjid</button>
+
+
+<h1 id="result"></h1>
+<img id="image" src="" alt="">
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss App</title>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; padding-top: 50px;">
+
+    <h1 style="
+        font-size: 3rem; 
+        margin-bottom: 20px; 
+        animation: glow 2s infinite alternate;
+    ">
+        Toss App
+    </h1>
+
+    <!-- Buttons -->
+    <button onclick="toss('chand')" style="
+        padding: 12px 25px; 
+        margin: 10px;
+        font-size: 1.2rem; 
+        border: none; 
+        border-radius: 8px; 
+        background: #00c6ff;
+        color: #000; 
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s;
+    "
+    onmouseover="this.style.transform='scale(1.1)'"
+    onmouseout="this.style.transform='scale(1)'">
+        Chand
+    </button>
+
+    <button onclick="toss('masjid')" style="
+        padding: 12px 25px; 
+        margin: 10px;
+        font-size: 1.2rem; 
+        border: none; 
+        border-radius: 8px; 
+        background: #66ff99;
+        color: #000; 
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s;
+    "
+    onmouseover="this.style.transform='scale(1.1)'"
+    onmouseout="this.style.transform='scale(1)'">
+        Masjid
+    </button>
+
+    <!-- Result -->
+    <h1 id="result" style="
+        margin-top: 30px; 
+        font-size: 2.5rem; 
+        animation: fadeIn 0.5s;
+    "></h1>
+
+    <!-- Image -->
+    <img id="image" src="" alt="" style="
+        width: 250px; 
+        margin-top: 20px; 
+        border-radius: 10px; 
+        box-shadow: 0 0 20px rgba(255,255,255,0.3); 
+        transition: transform 0.5s ease;
+    ">
+
+    <!-- Animations -->
+    <style>
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #00eaff; }
+            100% { text-shadow: 0 0 25px #00eaff; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
